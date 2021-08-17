@@ -1,2 +1,11 @@
 /// typo
 
+body {
+  font-family: $font-family;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
