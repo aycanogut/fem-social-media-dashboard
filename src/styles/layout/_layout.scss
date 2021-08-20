@@ -2,3 +2,33 @@
 
 @use '../abstracts/' as *;
 
+.cards {
+  display: flex;
+  flex-direction: column;
+
+  &__top {
+    // medium breakpoint
+    @include mq(medium) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    // large breakpoint
+    @include mq(large) {
+      display: flex;
+    }
+  }
+
+  &__overview__wrapper {
+    // medium breakpoint
+    @include mq(medium) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    // large breakpoint
+    @include mq(large) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+}
