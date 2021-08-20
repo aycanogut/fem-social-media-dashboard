@@ -3,9 +3,23 @@
 @use '../abstracts/' as *;
 
 .card {
-  &--main {
+  display: flex;
+  max-width: 32.6rem;
+  background-color: var(--dark-desaturated-blue-card);
+
+  &--top {
+    flex-direction: column;
+    margin: 0 0 2.5rem 0;
+    // padding: 3.2rem 103px 2.4rem 103px;
+
+    &__top {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
   }
 
   &--overview {
+    margin: 0 0 1.8rem 0;
   }
 }
