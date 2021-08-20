@@ -15,6 +15,7 @@ h3 {
 
 h1 {
   font-size: clamp(2.4rem, 3vw, 2.8rem);
+  white-space: nowrap;
 }
 
 h2 {
@@ -25,4 +26,27 @@ a,
 a:visited,
 a:active {
   text-decoration: none;
+}
+
+.card {
+  &--top {
+    &__top {
+      &__username {
+        font-size: 1.2rem;
+        font-weight: map-get($font-weight, bold);
+      }
+    }
+
+    &__middle {
+      &__count {
+        font-size: 3.2rem;
+        font-weight: map-get($font-weight, bold);
+
+        // large breakpoint
+        @include mq(large) {
+          font-size: 5.6rem;
+        }
+      }
+    }
+  }
 }
