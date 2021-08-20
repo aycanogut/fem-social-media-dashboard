@@ -34,7 +34,7 @@ const createUI = () => {
             <p class="card--top__top__username">@nathanf</p>
           </div>
           <div class="card--top__middle">
-            <p class="card--top__middle__year">1987</p>
+            <p class="card--top__middle__count">1987</p>
             <p class="card--top__middle__followers">followers</p>
           </div>
           <div class="card--top__bottom">
@@ -47,7 +47,7 @@ const createUI = () => {
             <p class="card--top__top__username">@nathanf</p>
           </div>
           <div class="card--top__middle">
-            <p class="card--top__middle__year">1044</p>
+            <p class="card--top__middle__count">1044</p>
             <p class="card--top__middle__followers">followers</p>
           </div>
           <div class="card--top__bottom">
@@ -60,7 +60,7 @@ const createUI = () => {
             <p class="card--top__top__username">@realnathanf</p>
           </div>
           <div class="card--top__middle">
-            <p class="card--top__middle__year">11k</p>
+            <p class="card--top__middle__count">11k</p>
             <p class="card--top__middle__followers">followers</p>
           </div>
           <div class="card--top__bottom">
@@ -73,7 +73,7 @@ const createUI = () => {
             <p class="card--top__top__username">Nathan F.</p>
           </div>
           <div class="card--top__middle">
-            <p class="card--top__middle__year">8293</p>
+            <p class="card--top__middle__count">8293</p>
             <p class="card--top__middle__followers">subscribers</p>
           </div>
           <div class="card--top__bottom">
@@ -84,8 +84,8 @@ const createUI = () => {
       <section class="cards__overview">
         <header class="cards__overview__header">
           <h2>overview - today</h2>
-        </header
-        <div class="card__overview__wrapper">
+        </header>
+        <div class="cards__overview__wrapper">
           <article class="card card--overview">
             <div class="card--overview__top">
               <p class="card--overview__top__views">page views</p>
@@ -166,7 +166,7 @@ const createUI = () => {
               <p class="card__rating">12%</p>
             </div>
           </article>
-        <div>
+        </div>
       </section>
       <!-- cards container end -->
     </main>
