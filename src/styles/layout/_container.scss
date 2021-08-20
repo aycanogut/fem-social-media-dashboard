@@ -1,0 +1,14 @@
+/// container
+
+@use '../abstracts/' as *;
+
+.container {
+  @include make-container(2.4rem);
+  max-width: map-get($container-max-widths, sm);
+
+  // large breakpoint
+  @include mq(large) {
+    @include make-container(16.5rem);
+    max-width: map-get($container-max-widths, xl);
+  }
+}
