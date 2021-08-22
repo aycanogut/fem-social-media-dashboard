@@ -39,7 +39,7 @@ a:active {
 
     &__middle {
       &__count {
-        font-size: 3.2rem;
+        font-size: 5.2rem;
         font-weight: map-get($font-weight, bold);
 
         // large breakpoint
@@ -47,6 +47,20 @@ a:active {
           font-size: 5.6rem;
         }
       }
+
+      &__followers {
+        font-size: 1.3rem;
+        font-weight: map-get($font-weight, "light");
+        text-transform: uppercase;
+        letter-spacing: 4px;
+      }
     }
+  }
+
+  // mutual element styles
+
+  &__rating {
+    font-size: 1.3rem;
+    font-weight: map-get($font-weight, "semi-bold");
   }
 }
