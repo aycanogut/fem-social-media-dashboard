@@ -23,10 +23,10 @@
 // grid
 @mixin grid($cols, $marg) {
   margin: 0 $marg $marg 0;
-  width: ( (100% - (($cols - 1) * $marg )) / $cols );
+  width: ((100% - (($cols - 1) * $marg)) / $cols);
 
-  &:nth-child(#{$cols}n){
-      margin-right: 0;
+  &:nth-child(#{$cols}n) {
+    margin-right: 0;
   }
 }
 
@@ -66,4 +66,29 @@
   -webkit-box-shadow: $args;
   -moz-box-shadow: $args;
   box-shadow: $args;
+}
+
+// top card upper line hover effect
+@mixin card-hover-line($color, $linear-middle: false, $linear-end: false) {
+  &:before {
+    content: "";
+    display: block;
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $color;
+
+    @if $linear-middle and $linear-end {
+      background: linear-gradient(225deg, $color, $linear-middle, $linear-end);
+    }
+    transition: all 0.2s ease-in-out;
+  }
+
+  &:hover {
+    &:before {
+      width: 0;
+    }
+  }
 }
