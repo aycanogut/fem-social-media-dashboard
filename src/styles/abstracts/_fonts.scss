@@ -1,13 +1,15 @@
 /// fonts
 
 // font
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700&display=swap");
 
 // font-family
 $font-family: "Inter", sans-serif;
 
 // font-weight
 $font-weight: (
+  "light": 200,
   "regular": 400,
+  "semi-bold": 600,
   "bold": 700,
 );
