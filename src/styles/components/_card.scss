@@ -8,6 +8,8 @@
   background-color: var(--dark-desaturated-blue-card);
 
   &--top {
+    @include transition(0.15s ease-in);
+    position: relative;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -32,9 +34,58 @@
         color: var(--desaturated-blue-card);
       }
     }
+
+    // top card upper line hover effect
+    &__facebook {
+      @include card-hover-line(var(--facebook));
+    }
+
+    &__twitter {
+      @include card-hover-line(var(--twitter));
+    }
+
+    &__instagram {
+      @include card-hover-line(
+        var(--instagram-start),
+        var(--instagram-middle),
+        var(--instagram-end)
+      );
+    }
+
+    &__youtube {
+      @include card-hover-line(var(--youtube));
+    }
+
+    // card hover effect
+    &:hover {
+      @include transition(0.15s ease-in);
+      box-shadow: 0 20px 40px rgba(61, 65, 84, 0.15);
+    }
   }
 
   &--overview {
     margin: 0 0 1.8rem 0;
+  }
+
+  // card ratings ( green and red text and arrows )
+
+  &__ascent {
+    color: var(--arrow-up);
+  }
+
+  &__descent {
+    color: var(--arrow-down);
+  }
+
+  // up and down arrows
+
+  &__ascent::before {
+    content: "▲";
+    color: var(--arrow-up);
+  }
+
+  &__descent::before {
+    content: "▼";
+    color: var(--arrow-down);
   }
 }
