@@ -28,7 +28,7 @@ const createUI = () => {
     <main class="cards">
       <!-- cards container start -->
       <section class="cards__top">
-        <article class="card card--top">
+        <article class="card card--top card--top__facebook">
           <div class="card--top__top">
             <img src="../../src/images/icon-facebook.svg" alt="facebook logo">
             <p class="card--top__top__username">@nathanf</p>
@@ -38,10 +38,10 @@ const createUI = () => {
             <p class="card--top__middle__followers">followers</p>
           </div>
           <div class="card--top__bottom">
-            <p class="card__rating">12 Today</p>
+            <p class="card__rating card__ascent">12 Today</p>
           </div>
         </article>
-        <article class="card card--top">
+        <article class="card card--top card--top__twitter">
           <div class="card--top__top">
           <img src="../../src/images/icon-twitter.svg" alt="twitter logo">
             <p class="card--top__top__username">@nathanf</p>
@@ -51,10 +51,10 @@ const createUI = () => {
             <p class="card--top__middle__followers">followers</p>
           </div>
           <div class="card--top__bottom">
-            <p class="card__rating">99 Today</p>
+            <p class="card__rating card__ascent">99 Today</p>
           </div>
         </article>
-        <article class="card card--top">
+        <article class="card card--top card--top__instagram">
           <div class="card--top__top">
           <img src="../../src/images/icon-instagram.svg" alt="instagram logo">
             <p class="card--top__top__username">@realnathanf</p>
@@ -64,10 +64,10 @@ const createUI = () => {
             <p class="card--top__middle__followers">followers</p>
           </div>
           <div class="card--top__bottom">
-            <p class="card__rating">1099 Today</p>
+            <p class="card__rating card__ascent">1099 Today</p>
           </div>
         </article>
-        <article class="card card--top">
+        <article class="card card--top card--top__youtube">
           <div class="card--top__top">
           <img src="../../src/images/icon-youtube.svg" alt="youtube logo">
             <p class="card--top__top__username">Nathan F.</p>
@@ -77,7 +77,7 @@ const createUI = () => {
             <p class="card--top__middle__followers">subscribers</p>
           </div>
           <div class="card--top__bottom">
-            <p class="card__rating">144 Today</p>
+            <p class="card__rating card__descent">144 Today</p>
           </div>
         </article>
       </section>
@@ -93,7 +93,7 @@ const createUI = () => {
             </div>
             <div class="card--overview__bottom">
               <p class="card--overview__bottom__number">87</p>
-              <p class="card__rating">3%</p>
+              <p class="card__rating card__ascent">3%</p>
             </div>
           </article>
           <article class="card card--overview">
@@ -103,7 +103,7 @@ const createUI = () => {
             </div>
             <div class="card--overview__bottom">
               <p class="card--overview__bottom__number">52</p>
-              <p class="card__rating">2%</p>
+              <p class="card__rating card__descent">2%</p>
             </div>
           </article>
           <article class="card card--overview">
@@ -113,7 +113,7 @@ const createUI = () => {
             </div>
             <div class="card--overview__bottom">
               <p class="card--overview__bottom__number">5462</p>
-              <p class="card__rating">2257%</p>
+              <p class="card__rating card__ascent">2257%</p>
             </div>
           </article>
           <article class="card card--overview">
@@ -123,7 +123,7 @@ const createUI = () => {
             </div>
             <div class="card--overview__bottom">
               <p class="card--overview__bottom__number">52k</p>
-              <p class="card__rating">1375%</p>
+              <p class="card__rating card__ascent">1375%</p>
             </div>
           </article>
           <article class="card card--overview">
@@ -133,7 +133,7 @@ const createUI = () => {
             </div>
             <div class="card--overview__bottom">
               <p class="card--overview__bottom__number">117</p>
-              <p class="card__rating">303%</p>
+              <p class="card__rating card__ascent">303%</p>
             </div>
           </article>
           <article class="card card--overview">
@@ -143,7 +143,7 @@ const createUI = () => {
             </div>
             <div class="card--overview__bottom">
               <p class="card--overview__bottom__number">507</p>
-              <p class="card__rating">553%</p>
+              <p class="card__rating card__ascent">553%</p>
             </div>
           </article>
           <article class="card card--overview">
@@ -153,7 +153,7 @@ const createUI = () => {
             </div>
             <div class="card--overview__bottom">
               <p class="card--overview__bottom__number">107</p>
-              <p class="card__rating">19%</p>
+              <p class="card__rating card__descent">19%</p>
             </div>
           </article>
           <article class="card card--overview">
@@ -163,7 +163,7 @@ const createUI = () => {
             </div>
             <div class="card--overview__bottom">
               <p class="card--overview__bottom__number">1407</p>
-              <p class="card__rating">12%</p>
+              <p class="card__rating card__descent">12%</p>
             </div>
           </article>
         </div>
