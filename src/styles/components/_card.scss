@@ -9,13 +9,28 @@
 
   &--top {
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     margin: 0 0 2.5rem 0;
-    // padding: 3.2rem 103px 2.4rem 103px;
+    padding: 3.2rem 0 2.4rem 0;
 
     &__top {
       display: flex;
       flex-direction: row;
       align-items: center;
+
+      &__username {
+        margin: 0 0.8rem;
+        color: var(--desaturated-blue-card);
+      }
+    }
+
+    &__middle {
+      padding: 2rem 0 3rem 0;
+
+      &__followers {
+        color: var(--desaturated-blue-card);
+      }
     }
   }
 
