@@ -3,11 +3,31 @@
 @use '../abstracts/' as *;
 
 header {
+  display: block;
   max-width: map-get($container-max-widths, xs);
   margin: 3.8rem auto 2.6rem auto;
 
   // medium breakpoint
   @include mq(medium) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: map-get($container-max-widths, md);
     margin: 0;
+  }
+
+  // large breakpoint
+  @include mq(large) {
+    max-width: map-get($container-max-widths, lg);
+  }
+
+  // x-large breakpoint
+  @include mq(x-large) {
+    max-width: map-get($container-max-widths, xl);
+  }
+
+  // xx-large breakpoint
+  @include mq(xx-large) {
+    max-width: map-get($container-max-widths, xxl);
   }
 }
