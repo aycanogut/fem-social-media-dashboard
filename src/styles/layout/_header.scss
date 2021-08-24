@@ -3,5 +3,11 @@
 @use '../abstracts/' as *;
 
 header {
-  margin: 3.8rem 0 2.6rem 0;
+  max-width: map-get($container-max-widths, xs);
+  margin: 3.8rem auto 2.6rem auto;
+
+  // medium breakpoint
+  @include mq(medium) {
+    margin: 0;
+  }
 }
