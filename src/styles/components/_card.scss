@@ -6,6 +6,7 @@
   display: flex;
   max-width: 32.6rem;
   background-color: var(--dark-desaturated-blue-card);
+  border-radius: 6px;
 
   &--top {
     @include transition(0.15s ease-in);
