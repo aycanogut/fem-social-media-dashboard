@@ -79,6 +79,8 @@
     top: 0;
     left: 0;
     background-color: $color;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 
     @if $linear-middle and $linear-end {
       background: linear-gradient(225deg, $color, $linear-middle, $linear-end);
