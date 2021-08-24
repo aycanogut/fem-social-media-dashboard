@@ -150,10 +150,12 @@
   &__ascent::before {
     content: "▲";
     color: var(--arrow-up);
+    margin: 3px;
   }
 
   &__descent::before {
     content: "▼";
     color: var(--arrow-down);
+    margin: 3px;
   }
 }
