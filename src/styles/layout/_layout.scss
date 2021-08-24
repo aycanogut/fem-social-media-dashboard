@@ -9,19 +9,20 @@
   margin: 0 auto;
 
   &__top {
-    justify-content: center;
     margin: 0 auto;
 
     // medium breakpoint
     @include mq(medium) {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      align-content: space-around;
       margin: 0;
     }
 
     // large breakpoint
     @include mq(large) {
       display: flex;
+      justify-content: space-between;
     }
   }
 
