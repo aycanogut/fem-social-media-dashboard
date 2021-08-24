@@ -5,6 +5,7 @@
 .container {
   @include make-container(2.4rem);
   max-width: map-get($container-max-widths, sm);
+  margin: 3.8rem auto 4.6rem auto;
 
   // medium breakpoint
   @include mq(medium) {
