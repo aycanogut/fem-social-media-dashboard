@@ -29,6 +29,16 @@ a:active {
   text-decoration: none;
 }
 
+// layout
+.header {
+  &__text {
+    font-size: 1.4rem;
+    font-weight: map-get($font-weight, semi-bold);
+    letter-spacing: 0.2px;
+  }
+}
+
+// components
 .card {
   &--top {
     &__top {
