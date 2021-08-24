@@ -116,12 +116,22 @@
 
   &--overview {
     flex-direction: column;
-    padding: 2.8rem 2.6rem;
+    align-items: space-between;
+    padding: 2.7rem 3.1rem 2.7rem 2.6rem;
+    margin: 0 0 1.8rem 0;
 
     &__top,
     &__bottom {
       display: flex;
       justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    &__top {
+      margin: 0 0 1.4rem 0;
+      p {
+        color: var(--desaturated-blue-card);
+      }
     }
   }
 
