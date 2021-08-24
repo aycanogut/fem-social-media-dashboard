@@ -26,16 +26,40 @@
     }
   }
 
-  &__overview__wrapper {
-    // medium breakpoint
-    @include mq(medium) {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+  &__overview {
+    margin: 0 auto;
+
+    &__wrapper {
+      // medium breakpoint
+      @include mq(medium) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      // large breakpoint
+      @include mq(large) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 3.3rem;
+        margin: 0;
+      }
+
+      // x-large breakpoint
+      @include mq(x-large) {
+        gap: 2.3rem;
+      }
+
+      // xx-large breakpoint
+      @include mq(xx-large) {
+        gap: 3rem;
+      }
     }
 
     // large breakpoint
     @include mq(large) {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin: 0;
     }
   }
 }
