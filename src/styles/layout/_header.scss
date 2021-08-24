@@ -5,7 +5,7 @@
 header {
   display: block;
   max-width: map-get($container-max-widths, xs);
-  margin: 3.8rem auto 2.6rem auto;
+  margin: 0 auto 2.6rem auto;
 
   // medium breakpoint
   @include mq(medium) {
