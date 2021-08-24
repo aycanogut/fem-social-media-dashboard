@@ -119,6 +119,7 @@
     align-items: space-between;
     padding: 2.7rem 3.1rem 2.7rem 2.6rem;
     margin: 0 0 1.8rem 0;
+    min-width: 276px;
 
     &__top,
     &__bottom {
@@ -129,9 +130,34 @@
 
     &__top {
       margin: 0 0 1.4rem 0;
+
       p {
         color: var(--desaturated-blue-card);
       }
+    }
+
+    // x-small breakpoint
+    @include mq(x-small) {
+      min-width: 327px;
+    }
+
+    // medium breakpoint
+    @include mq(medium) {
+      min-width: 326px;
+    }
+
+    // large breakpoint
+    @include mq(large) {
+      min-width: 200px;
+    }
+
+    // x-large breakpoint
+    @include mq(x-large) {
+    }
+
+    // xx-large breakpoint
+    @include mq(xx-large) {
+      min-width: 254px;
     }
   }
 
