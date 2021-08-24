@@ -2,6 +2,20 @@
 
 @use '../abstracts/' as *;
 
+// background
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -9;
+  height: 233px;
+  background-color: var(--very-dark-blue-background-pattern);
+  border-bottom-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+// card containers
 .cards {
   display: flex;
   flex-direction: column;
