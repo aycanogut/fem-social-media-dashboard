@@ -14,12 +14,7 @@
     align-items: center;
     text-align: center;
     margin: 0 0 2.5rem 0;
-    padding: 3.2rem 7rem 2.4rem;
-
-    // x-small breakpoint
-    @include mq(x-small) {
-      padding: 3.2rem 10rem 2.4rem;
-    }
+    padding: 3rem 7rem 2.4rem;
 
     &__top {
       display: flex;
@@ -27,15 +22,19 @@
       align-items: center;
 
       &__username {
-        margin: 0 0.8rem;
         color: var(--desaturated-blue-card);
+      }
+
+      p {
+        margin: 0 0 0 1rem;
       }
     }
 
     &__middle {
-      padding: 2rem 0 3rem 0;
+      padding: 2rem 0 2.8rem 0;
 
       &__followers {
+        margin: 0.4rem 0 0 0;
         color: var(--desaturated-blue-card);
       }
     }
@@ -65,6 +64,52 @@
     &:hover {
       @include transition(0.15s ease-in);
       box-shadow: 0 10px 40px rgba(204, 207, 219, 0.15);
+    }
+
+    // card breakpoints
+
+    // x-small breakpoint
+    @include mq(x-small) {
+      padding: 3.2rem 10rem 2.4rem;
+    }
+
+    // medium breakpoint
+    @include mq(medium) {
+      min-width: 326px;
+
+      // card space between
+      &:nth-child(even) {
+        margin: 0 0 2rem auto;
+      }
+
+      &:nth-child(odd) {
+        margin: 0 auto 2rem 0;
+      }
+    }
+
+    // large breakpoint
+    @include mq(large) {
+      min-width: 200px;
+      padding: 3.2rem 0 2.4rem 0;
+
+      // card space between
+      &:nth-child(even) {
+        margin: 0;
+      }
+
+      &:nth-child(odd) {
+        margin: 0;
+      }
+    }
+
+    // x-large breakpoint
+    @include mq(x-large) {
+      padding: 3.2rem 4rem 2.4rem;
+    }
+
+    // xx-large breakpoint
+    @include mq(xx-large) {
+      min-width: 254px;
     }
   }
 
