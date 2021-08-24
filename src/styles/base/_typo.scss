@@ -53,6 +53,19 @@ a:active {
     }
   }
 
+  &--overview {
+    &__top {
+      font-size: 1.4rem;
+      font-weight: map-get($font-weight, semi-bold);
+      text-transform: capitalize;
+    }
+
+    &__bottom {
+      font-size: 3rem;
+      font-weight: map-get($font-weight, bold);
+    }
+  }
+
   // mutual element styles
 
   &__rating {
