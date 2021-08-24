@@ -5,17 +5,26 @@
 .container {
   @include make-container(2.4rem);
   max-width: map-get($container-max-widths, sm);
-  margin: 0 auto;
 
   // medium breakpoint
   @include mq(medium) {
-    padding: 0;
     max-width: map-get($container-max-widths, md);
   }
 
   // large breakpoint
   @include mq(large) {
-    @include make-container(16.5rem);
+    @include make-container(3rem);
+    max-width: map-get($container-max-widths, lg);
+  }
+
+  // x-large breakpoint
+  @include mq(x-large) {
+    @include make-container(10.5rem);
     max-width: map-get($container-max-widths, xl);
+  }
+
+  // xx-large breakpoint
+  @include mq(xx-large) {
+    max-width: map-get($container-max-widths, xxl);
   }
 }
