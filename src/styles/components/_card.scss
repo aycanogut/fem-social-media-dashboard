@@ -115,7 +115,14 @@
   }
 
   &--overview {
-    margin: 0 0 1.8rem 0;
+    flex-direction: column;
+    padding: 2.8rem 2.6rem;
+
+    &__top,
+    &__bottom {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   // card ratings ( green and red text and arrows )
