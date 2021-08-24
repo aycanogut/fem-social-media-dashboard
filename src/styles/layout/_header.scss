@@ -2,10 +2,16 @@
 
 @use '../abstracts/' as *;
 
-header {
+.header {
   display: block;
   max-width: map-get($container-max-widths, xs);
   margin: 0 auto 2.6rem auto;
+
+  &__text {
+    padding: 0 0 2.4rem 0;
+    color: var(--desaturated-blue-card);
+    border-bottom: 1px solid hsl(234, 13%, 28%);
+  }
 
   // medium breakpoint
   @include mq(medium) {
