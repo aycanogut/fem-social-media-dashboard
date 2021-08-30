@@ -41,7 +41,11 @@
   }
 
   &__overview {
-    margin: 0 auto;
+    margin: 3.4rem auto 0;
+
+    &__header {
+      margin: 0 0 3.5rem 0; //////
+    }
 
     &__wrapper {
       // medium breakpoint
