@@ -13,6 +13,17 @@
     border-bottom: 1px solid hsl(234, 13%, 28%);
   }
 
+  &__toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0 0 0;
+
+    label {
+      color: var(--desaturated-blue-card);
+    }
+  }
+
   // medium breakpoint
   @include mq(medium) {
     display: flex;
