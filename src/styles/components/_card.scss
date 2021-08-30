@@ -145,6 +145,7 @@
     // large breakpoint
     @include mq(large) {
       min-width: 200px;
+      margin: 0;
     }
 
     // x-large breakpoint
@@ -160,7 +161,7 @@
   // card hover effect
   &:hover {
     @include transition(0.15s ease-in);
-    box-shadow: 0 10px 40px rgba(204, 207, 219, 0.15);
+    box-shadow: 0 10px 10px rgba(204, 207, 219, 0.05);
   }
 
   // card ratings ( green and red text and arrows )
