@@ -11,6 +11,11 @@
     padding: 0 0 2.4rem 0;
     color: var(--desaturated-blue-card);
     border-bottom: 1px solid hsl(234, 13%, 28%);
+
+    // large breakpoint
+    @include mq(large) {
+      border-bottom: none;
+    }
   }
 
   &__toggle {
@@ -21,6 +26,11 @@
 
     label {
       color: var(--desaturated-blue-card);
+    }
+
+    // large breakpoint
+    @include mq(large) {
+      padding: 1.6rem 0 4.8em 0;
     }
   }
 
