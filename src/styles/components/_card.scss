@@ -36,6 +36,7 @@
       padding: 2rem 0 2.8rem 0;
 
       &__count {
+        @include transition(0.1s ease-in);
         color: var(--white-text);
       }
 
@@ -137,6 +138,7 @@
 
     &__bottom {
       &__number {
+        @include transition(0.1s ease-in);
         color: var(--white-text);
       }
     }
