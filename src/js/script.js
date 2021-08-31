@@ -16,8 +16,8 @@ const createUI = () => {
       <fieldset class="header__toggle toggle" aria-label="theme toggle" role="radiogroup">
         <label for="dark">Dark Mode</label>
         <span class="toggle__wrapper">
-          <input type="radio" name="theme" id="light" />
-          <input type="radio" name="theme" id="dark" />
+          <input type="radio" name="theme" id="light" checked='true'/>
+          <input type="radio" name="theme" id="dark"  />
           <span aria-hidden="true" class="toggle__background"></span>
           <span aria-hidden="true" class="toggle__button"></span>
         </span>
@@ -175,3 +175,19 @@ const createUI = () => {
 };
 
 createUI();
+
+// dark mode toggle switch functionality
+const toggleTheme = () => {
+  const toggleSwitch = document.querySelector('.toggle__wrapper');
+  const dark = toggleSwitch.children[0];
+  const light = toggleSwitch.children[1];
+
+  toggleSwitch.addEventListener('click', () => {
+    if (light.checked) {
+      console.log(light.checked, 'light');
+    } else if (dark.checked) {
+      console.log(dark.checked, 'dark');
+    }
+  });
+};
+toggleTheme()
