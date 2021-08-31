@@ -4,6 +4,7 @@
 
 // background
 .background {
+  @include transition(0.1s ease-in);
   position: absolute;
   top: 0;
   left: 0;
