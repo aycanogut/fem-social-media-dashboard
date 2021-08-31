@@ -185,9 +185,10 @@ const toggleTheme = () => {
   toggleSwitch.addEventListener('click', () => {
     if (light.checked) {
       console.log(light.checked, 'light');
-    } else if (dark.checked) {
-      console.log(dark.checked, 'dark');
+      document.body.classList.add('light-theme');
+    } else {
+      document.body.classList.remove('light-theme');
     }
   });
 };
-toggleTheme()
+toggleTheme();
