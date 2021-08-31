@@ -178,13 +178,15 @@ createUI();
 
 // dark mode toggle switch functionality
 const toggleTheme = () => {
+
+  // toggle switch elements
   const toggleSwitch = document.querySelector('.toggle__wrapper');
   const dark = toggleSwitch.children[0];
   const light = toggleSwitch.children[1];
 
+  // toggle switch event listener
   toggleSwitch.addEventListener('click', () => {
     if (light.checked) {
-      console.log(light.checked, 'light');
       document.body.classList.add('light-theme');
     } else {
       document.body.classList.remove('light-theme');
