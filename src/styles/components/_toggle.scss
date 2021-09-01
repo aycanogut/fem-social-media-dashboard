@@ -70,3 +70,8 @@
 #dark:checked ~ .toggle__background {
   background: var(--toggle-light);
 }
+
+// remove light mode text label as default
+label[for="light"] {
+  display: none;
+}
