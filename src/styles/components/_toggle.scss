@@ -60,6 +60,7 @@
   }
 }
 
+// switch theme colors on dark mode button checked
 #dark:checked ~ .toggle__button {
   right: 0;
   left: 50%;
