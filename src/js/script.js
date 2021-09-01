@@ -14,13 +14,13 @@ const createUI = () => {
         </p>
       </section>
       <fieldset class="header__toggle toggle" aria-label="theme toggle" role="radiogroup">
-        <label for="dark">Dark Mode</label>
+        <label class='dark' for="dark">Dark Mode</label>
         <span class="toggle__wrapper">
-          <input type="radio" name="theme" id="light" checked='true'/>
-          <input type="radio" name="theme" id="dark"  />
-          <span aria-hidden="true" class="toggle__background"></span>
+        <input type="radio" name="theme" id="light" checked='true'/>
+        <input type="radio" name="theme" id="dark"  />
+        <span aria-hidden="true" class="toggle__background"></span>
           <span aria-hidden="true" class="toggle__button"></span>
-        </span>
+          </span>
       </fieldset>
     </header>
     <!-- header end  -->
@@ -183,13 +183,16 @@ const toggleTheme = () => {
   const toggleSwitch = document.querySelector('.toggle__wrapper');
   const dark = toggleSwitch.children[0];
   const light = toggleSwitch.children[1];
+  const darkModeText = document.querySelector('.dark');
 
   // toggle switch event listener
   toggleSwitch.addEventListener('click', () => {
     if (light.checked) {
       document.body.classList.add('light-theme');
+      darkModeText.innerHTML = 'Light Mode'
     } else {
       document.body.classList.remove('light-theme');
+      darkModeText.innerHTML = 'Dark Mode'
     }
   });
 };
