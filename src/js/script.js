@@ -14,11 +14,9 @@ const createUI = () => {
         </p>
       </section>
       <fieldset class="header__toggle toggle" aria-label="theme toggle" role="radiogroup">
-        <label class='dark' for="dark">Dark Mode</label>
-        <label for="light">Dark Mode</label>
         <span class="toggle__wrapper">
-        <input type="radio" name="theme" id="light" checked/>
-        <input type="radio" name="theme" id="dark"  />
+        <label for="light">Light Mode <input type="radio" name="theme" id="light" checked/></label>
+        <label class='dark' for="dark">Dark Mode <input type="radio" name="theme" id="dark" /></label>
         <span aria-hidden="true" class="toggle__background"></span>
           <span aria-hidden="true" class="toggle__button"></span>
           </span>
