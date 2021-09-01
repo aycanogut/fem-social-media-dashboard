@@ -17,7 +17,7 @@ const createUI = () => {
         <label class='dark' for="dark">Dark Mode</label>
         <label for="light">Dark Mode</label>
         <span class="toggle__wrapper">
-        <input type="radio" name="theme" id="light" checked='true'/>
+        <input type="radio" name="theme" id="light" checked/>
         <input type="radio" name="theme" id="dark"  />
         <span aria-hidden="true" class="toggle__background"></span>
           <span aria-hidden="true" class="toggle__button"></span>
