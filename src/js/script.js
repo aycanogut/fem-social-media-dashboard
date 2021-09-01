@@ -27,7 +27,7 @@ const createUI = () => {
     <main class="cards">
       <!-- cards container start -->
       <section class="cards__top">
-        <article class="card card--top card--top__facebook" area-label="article">
+        <article class="card card--top card--top__facebook">
           <div class="card--top__top">
             <img src="../../src/images/icon-facebook.svg" alt="facebook logo">
             <p class="card--top__top__username">@nathanf</p>
@@ -40,7 +40,7 @@ const createUI = () => {
             <p class="card__rating card__ascent">12 Today</p>
           </div>
         </article>
-        <article class="card card--top card--top__twitter" area-label="article">
+        <article class="card card--top card--top__twitter">
           <div class="card--top__top">
           <img src="../../src/images/icon-twitter.svg" alt="twitter logo">
             <p class="card--top__top__username">@nathanf</p>
@@ -53,7 +53,7 @@ const createUI = () => {
             <p class="card__rating card__ascent">99 Today</p>
           </div>
         </article>
-        <article class="card card--top card--top__instagram" area-label="article">
+        <article class="card card--top card--top__instagram">
           <div class="card--top__top">
           <img src="../../src/images/icon-instagram.svg" alt="instagram logo">
             <p class="card--top__top__username">@realnathanf</p>
@@ -66,7 +66,7 @@ const createUI = () => {
             <p class="card__rating card__ascent">1099 Today</p>
           </div>
         </article>
-        <article class="card card--top card--top__youtube" area-label="article">
+        <article class="card card--top card--top__youtube">
           <div class="card--top__top">
           <img src="../../src/images/icon-youtube.svg" alt="youtube logo">
             <p class="card--top__top__username">Nathan F.</p>
@@ -85,7 +85,7 @@ const createUI = () => {
           <h2>overview - today</h2>
         </header>
         <div class="cards__overview__wrapper">
-          <article class="card card--overview" area-label="article">
+          <article class="card card--overview">
             <div class="card--overview__top">
               <p class="card--overview__top__views">page views</p>
               <img src="../../src/images/icon-facebook.svg" alt="facebook logo">
@@ -95,7 +95,7 @@ const createUI = () => {
               <p class="card__rating card__ascent">3%</p>
             </div>
           </article>
-          <article class="card card--overview" area-label="article">
+          <article class="card card--overview">
             <div class="card--overview__top">
               <p class="card--overview__top__views">likes</p>
               <img src="../../src/images/icon-facebook.svg" alt="facebook logo">
@@ -105,7 +105,7 @@ const createUI = () => {
               <p class="card__rating card__descent">2%</p>
             </div>
           </article>
-          <article class="card card--overview" area-label="article">
+          <article class="card card--overview">
             <div class="card--overview__top">
               <p class="card--overview__top__views">likes</p>
               <img src="../../src/images/icon-instagram.svg" alt="instagram logo">
@@ -115,7 +115,7 @@ const createUI = () => {
               <p class="card__rating card__ascent">2257%</p>
             </div>
           </article>
-          <article class="card card--overview" area-label="article">
+          <article class="card card--overview">
             <div class="card--overview__top">
               <p class="card--overview__top__views">profile views</p>
               <img src="../../src/images/icon-instagram.svg" alt="instagram logo">
@@ -125,7 +125,7 @@ const createUI = () => {
               <p class="card__rating card__ascent">1375%</p>
             </div>
           </article>
-          <article class="card card--overview" area-label="article">
+          <article class="card card--overview">
             <div class="card--overview__top">
               <p class="card--overview__top__views">retweets</p>
             <img src="../../src/images/icon-twitter.svg" alt="twitter logo">
@@ -135,7 +135,7 @@ const createUI = () => {
               <p class="card__rating card__ascent">303%</p>
             </div>
           </article>
-          <article class="card card--overview" area-label="article">
+          <article class="card card--overview">
             <div class="card--overview__top">
               <p class="card--overview__top__views">likes</p>
             <img src="../../src/images/icon-twitter.svg" alt="twitter logo">
@@ -145,7 +145,7 @@ const createUI = () => {
               <p class="card__rating card__ascent">553%</p>
             </div>
           </article>
-          <article class="card card--overview" area-label="article">
+          <article class="card card--overview">
             <div class="card--overview__top">
               <p class="card--overview__top__views">likes</p>
             <img src="../../src/images/icon-youtube.svg" alt="youtube logo">
@@ -155,7 +155,7 @@ const createUI = () => {
               <p class="card__rating card__descent">19%</p>
             </div>
           </article>
-          <article class="card card--overview" area-label="article">
+          <article class="card card--overview">
             <div class="card--overview__top">
               <p class="card--overview__top__views">total views</p>
             <img src="../../src/images/icon-youtube.svg" alt="youtube logo">
