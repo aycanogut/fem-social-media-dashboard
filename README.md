@@ -12,10 +12,9 @@ This is a solution to the [Social media dashboard with theme switcher challenge 
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
+
 
 ## Overview
 
@@ -50,9 +49,6 @@ Users should be able to:
 
 I learned how to make an accessibility-friendly toggle button and how to use custom CSS variables to enable dark mode functionality. 
 ### Useful resources
-
-
-
 - [Accessible Option for Toggle Switch](https://codepen.io/SaraSoueidan/pen/jpBbrq?editors=0100) - That solution allowed me to see how I can build an accessible toggle button. 
 - [Coder Coder](https://www.youtube.com/watch?v=n3hkpnOFr0A&list=PLUWqFDiirlsu5az5EIyxe8ZddyNO_kDuP&index=3) - I learned gulp.js configurations from this source.
 - [How to create a dark theme system in 5 minutes or less with vanilla JS. ](https://dev.to/codedgar/how-to-create-a-dark-theme-system-in-5-minutes-or-less-with-vanilla-js-2922) - I learnt how to modify the state of the page theme using CSS custom variables. 
