@@ -1,7 +1,7 @@
 //* create main page HTML structure
 
 const createUI = () => {
-  const container = document.querySelector('.container');
+  const container = document.querySelector(".container");
   container.innerHTML = `
     <!-- header start  -->
     <header class="header">
@@ -13,15 +13,9 @@ const createUI = () => {
           Total Followers: 23,004
         </p>
       </section>
-      <fieldset class="header__toggle toggle" aria-label="theme toggle" role="radiogroup">
-      <label for="light">Light Mode </label>
-      <label class='dark' for="dark">Dark Mode</label>
-        <span class="toggle__wrapper">
-        <input type="radio" name="theme" id="light" checked aria-label="Light Mode"/>
-        <input type="radio" name="theme" id="dark" aria-label="Dark Mode" />
-        <span aria-hidden="true" class="toggle__background"></span>
-          <span aria-hidden="true" class="toggle__button"></span>
-          </span>
+      <fieldset class="toggle">
+        <span id="text">Light Mode</span>
+        <input type="checkbox" id="switch" /><label for="switch">Toggle</label>
       </fieldset>
     </header>
     <!-- header end  -->
@@ -179,21 +173,18 @@ createUI();
 
 // dark mode toggle switch functionality
 const toggleTheme = () => {
-
   // toggle switch elements
-  const toggleSwitch = document.querySelector('.toggle__wrapper');
-  const dark = toggleSwitch.children[0];
-  const light = toggleSwitch.children[1];
-  const darkModeText = document.querySelector('.dark');
+  const toggle = document.getElementById("switch");
+  const text = document.getElementById("text");
 
   // toggle switch event listener
-  toggleSwitch.addEventListener('click', () => {
-    if (light.checked) {
-      document.body.classList.add('light-theme');
-      darkModeText.innerHTML = 'Light Mode'
+  toggle.addEventListener("click", () => {
+    if (toggle.checked) {
+      document.body.classList.add("light-theme");
+      text.innerHTML = "Dark Mode";
     } else {
-      document.body.classList.remove('light-theme');
-      darkModeText.innerHTML = 'Dark Mode'
+      document.body.classList.remove("light-theme");
+      text.innerHTML = "Light Mode";
     }
   });
 };

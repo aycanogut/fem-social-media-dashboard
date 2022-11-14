@@ -1,77 +1,62 @@
 /// toggle
 
-@use '../abstracts/' as *;
+@use "../abstracts/" as *;
+
+/// toggle
+
+@use "../abstracts/" as *;
 
 .toggle {
-  &__wrapper {
-    font-size: var(--baseSize);
-    display: inline-block;
-    vertical-align: middle;
-    width: 4.8rem;
-    height: 2.4rem;
-    border-radius: 3.5em; /* = height */
-    position: relative; // create positioning
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin: 2rem 0 0 0;
 
-    // input common styles
-
-    input[type="radio"] {
-      display: inline-block;
-      margin-right: -2px;
-      width: 50%;
-      height: 100%;
-      opacity: 0;
-      position: relative;
-      z-index: 1;
-      cursor: pointer;
-
-      &:focus ~ .c-toggle__switcher {
-        border: 3px solid hsla(333, 40%, 45%, 1);
-        top: -2px;
-      }
-    }
+  @include mq(medium) {
+    margin: 0;
   }
 
-  &__background {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    transition: all 0.1s ease-out;
+  input[type="checkbox"] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+  }
+
+  label {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 48px;
+    height: 24px;
     background: var(--toggle-dark);
-    border-radius: 3.5em;
-  }
-
-  &__button {
     display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 100%;
-    z-index: 2;
-    width: 40%;
-    height: 80%;
-    margin: 0.25rem 0 0 0.2rem;
-    transition: all 0.1s ease-out;
-    background: var(--dark-desaturated-blue-card);
-    border-radius: 50%;
+    border-radius: 100px;
+    position: relative;
   }
-}
 
-// switch theme colors on dark mode button checked
-#dark:checked ~ .toggle__button {
-  right: 0;
-  left: 50%;
-  background: var(--white);
-}
+  label:after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    width: 18px;
+    height: 18px;
+    background: var(--very-dark-blue-background);
+    border-radius: 90px;
+    transition: 0.3s;
+  }
 
-#dark:checked ~ .toggle__background {
-  background: var(--toggle-light);
-}
+  input:checked + label {
+    background: var(--toggle-light);
+  }
 
-// remove light mode text label as default
-label[for="light"] {
-  display: none;
+  input:checked + label:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+    background: #fff;
+  }
+
+  label:active:after {
+    width: 18px;
+  }
 }
